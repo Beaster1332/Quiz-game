@@ -1,0 +1,7 @@
+.quizContainer {
+    min-width: 625px;
+    min-height: 450px;
+    border-radius: 10px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.2));
+}
