@@ -1,11 +1,11 @@
 import React from 'react';
-import Quiz from '../Quiz/Quiz.jsx';
+import QuizContainer from '../Quiz/QuizContainer.jsx';
 import classes from './App.module.css';
 
 const App = () => {
     return <div className={classes.appContainer}>
         <div className={classes.componentsContainer}>
-            <Quiz />
+            <QuizContainer />
         </div>
     </div>
 }
