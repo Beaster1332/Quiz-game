@@ -1,0 +1,17 @@
+.questionContainer {
+    width: 100%;
+    max-height: 300px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questionName {
+    margin-bottom: 35px;
+}
+
+.quizAnswers {
+    width: 100%;
+}

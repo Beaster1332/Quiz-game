@@ -1,6 +1,6 @@
 .quizContainer {
-    max-width: 625px;
-    max-height: 450px;
+    width: 625px;
+    height: 450px;
     padding: 25px 30px;
     border-radius: 10px;
     background-color: #fff;
@@ -13,5 +13,41 @@
 }
 
 .quizContent {
+    width: 100%;
+    height: 93%;
     margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepNow {
+    position: absolute;
+    bottom: 25px;
+}
+
+.comeBackBtn {
+    position: absolute;
+    bottom: 75px;
+    max-width: 175px;
+    max-height: 50px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: #337DFF;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.comeBackBtn:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.3));
+}
+
+.comeBackBtn:active {
+    transform: scale(1);
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
 }

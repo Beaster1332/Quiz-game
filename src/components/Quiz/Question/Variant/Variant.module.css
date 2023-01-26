@@ -1,0 +1,24 @@
+.variantBlock {
+    width: 100%;
+    padding: 10px 13px;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    transition: background-color, color ease 0.35s, ease 0.35s;
+    cursor: pointer;
+}
+
+.variantBlock:last-child {
+    margin-bottom: 0;
+}
+
+.variantBlock:hover {
+    background-color: #337DFF;
+    color: #ffffff;
+}
+
+.variantBlock:active {
+    background-color: #005DFF;
+    color: beige;
+}

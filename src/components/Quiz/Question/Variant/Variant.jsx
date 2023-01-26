@@ -5,11 +5,13 @@ import classes from './Variant.module.css';
 
 const Variant = (props) => {
 
-    const { correct,
+    const {
+        correct,
         index,
         variant,
         nextStep,
-        plusCorrect } = props;
+        plusCorrect
+    } = props;
 
     const onClickVariant = () => {
         if (index === correct) {

@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+import { comeBackToStartAC } from "../../store/quizReducer.js";
 import Quiz from "./Quiz.jsx";
 
 let mapStateToProps = (state) => {
@@ -8,4 +9,10 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, null)(Quiz);
+let mapDispatchToProps = (dispatch) => {
+    return {
+        comeBack: () => dispatch(comeBackToStartAC()),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Quiz);

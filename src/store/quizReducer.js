@@ -2,6 +2,7 @@ import { questionsForReducer } from "./Data/questionsForReducer.js";
 
 const PLUS_STEP = 'quiz/PLUS_STEP';
 const PLUS_CORRECT_ANSWER = 'quiz/PLUS_CORRECT_ANSWER';
+const COME_BACK_TO_START = 'quiz/COME_BACK_TO_START';
 
 let initialState = {
     questions: [
@@ -23,6 +24,12 @@ const quizReducer = (state = initialState, action) => {
                 ...state,
                 correctAnswers: state.correctAnswers + 1,
             }
+        case COME_BACK_TO_START:
+            return {
+                ...state,
+                step: 0,
+                correctAnswers: 0,
+            }
         default:
             return state
     }
@@ -30,5 +37,6 @@ const quizReducer = (state = initialState, action) => {
 
 export const plusStepAC = () => ({ type: PLUS_STEP });
 export const plusCorrectAnswersAC = () => ({ type: PLUS_CORRECT_ANSWER });
+export const comeBackToStartAC = () => ({ type: COME_BACK_TO_START });
 
 export default quizReducer;

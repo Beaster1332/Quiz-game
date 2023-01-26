@@ -11,11 +11,11 @@ const Question = (props) => {
         variant={v}
         index={idx}
         correct={correct}
-    />)
+    />);
 
-    return <div>
-        <h3>{title}</h3>
-        <div className={classes.quizQuestions}>
+    return <div className={classes.questionContainer}>
+        <h3 className={classes.questionName}>{title}</h3>
+        <div className={classes.quizAnswers}>
             {variantsItems}
         </div>
     </div>

@@ -5,7 +5,7 @@ import classes from './Quiz.module.css';
 
 const Quiz = (props) => {
 
-    const { questions, step } = props;
+    const { questions, step, comeBack } = props;
 
     let question = questions[step];
 
@@ -16,8 +16,17 @@ const Quiz = (props) => {
         <div className={classes.quizContent}>
             {
                 step !== questions.length
-                    ? <Question {...question} />
+                    ? (
+                        <>
+                            <Question {...question} />
+                            <h4 className={classes.stepNow}>{step + 1} / {questions.length}</h4>
+                        </>
+                    )
                     : <Results />
+            }
+            {
+                step === questions.length &&
+                <button className={classes.comeBackBtn} onClick={() => comeBack()} >Попробовать снова</button>
             }
         </div>
     </div>
