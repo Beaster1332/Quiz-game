@@ -13,3 +13,36 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .componentsContainer {
+        width: 980px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 979px) {
+    .componentsContainer {
+        width: 769px;    
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .componentsContainer {
+        width: 640px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 639px) {
+    .componentsContainer {
+        width: 430px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 429px) {
+    .componentsContainer {
+        width: 360px;
+        padding: 0 20px;
+    }
+}

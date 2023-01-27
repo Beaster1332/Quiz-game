@@ -51,3 +51,21 @@
     transform: scale(1);
     filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
 }
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .quizContainer {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 639px) {
+    .quizContainer {
+        width: 390px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 429px) {
+    .quizContainer {
+        width: 320px;
+    }
+}
